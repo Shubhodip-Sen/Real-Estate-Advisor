@@ -1,0 +1,11 @@
+{
+  "rows_raw": 250000,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "floor_gt_total_floors": 116304,
+  "ppsf_outliers_iqr": 19723,
+  "Price_in_Lakhs_outliers_iqr": 0,
+  "Size_in_SqFt_outliers_iqr": 0,
+  "rows_clean": 250000,
+  "good_investment_rate": 0.2742
+}

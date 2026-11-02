@@ -1,0 +1,149 @@
+{
+  "classification": {
+    "LogisticRegression": {
+      "accuracy": 0.9004,
+      "precision": 0.8295,
+      "recall": 0.8016,
+      "f1": 0.8153,
+      "roc_auc": 0.9644
+    },
+    "RandomForest": {
+      "accuracy": 0.9727,
+      "precision": 0.9526,
+      "recall": 0.9475,
+      "f1": 0.95,
+      "roc_auc": 0.9959
+    },
+    "XGBoost": {
+      "accuracy": 0.9988,
+      "precision": 0.997,
+      "recall": 0.9985,
+      "f1": 0.9978,
+      "roc_auc": 1.0
+    }
+  },
+  "regression": {
+    "LinearRegression": {
+      "rmse": 8.9885,
+      "mae": 6.2763,
+      "r2": 0.9978
+    },
+    "RandomForest": {
+      "rmse": 2.1885,
+      "mae": 1.43,
+      "r2": 0.9999
+    },
+    "XGBoost": {
+      "rmse": 1.5268,
+      "mae": 1.1837,
+      "r2": 0.9999
+    }
+  },
+  "sanity": {
+    "target": "Price_in_Lakhs (current)",
+    "rmse": 141.5855,
+    "r2": -0.0056,
+    "baseline_rmse_predict_mean": 141.1946
+  },
+  "regression_residual_pct": {
+    "p05": -1.082,
+    "p95": 1.184
+  },
+  "best_classifier_by_auc": "XGBoost",
+  "best_regressor_by_rmse": "XGBoost",
+  "feature_importance_clf": {
+    "Price_per_SqFt_INR": 0.24999992187076361,
+    "Availability_Status": 0.15599203440906867,
+    "City": 0.12390123412615249,
+    "Is_Metro": 0.11446479479259672,
+    "Public_Transport_Accessibility": 0.08767995508690161,
+    "Price_in_Lakhs": 0.06958684639130987,
+    "Size_in_SqFt": 0.05762893966529683,
+    "Infrastructure_Score": 0.057070876252251275,
+    "Age_of_Property": 0.05309848726909419,
+    "Nearby_Schools": 0.008756215147794384,
+    "Nearby_Hospitals": 0.007371494413406365,
+    "Facing": 0.0027832067953996167,
+    "Property_Type": 0.001852279496118229,
+    "Furnished_Status": 0.0017604631642088614,
+    "Owner_Type": 0.0010316253639472215,
+    "Parking_Space": 0.0009887880451459633,
+    "Has_Garden": 0.0007286349174503738,
+    "Floor_Ratio": 0.000620834499198637,
+    "Size_per_BHK": 0.000612547241309897,
+    "Security": 0.0005772227274339887,
+    "Total_Floors": 0.0005701834127476989,
+    "Has_Clubhouse": 0.0004604082995103924,
+    "Has_Pool": 0.0004478587563551576,
+    "Floor_No": 0.0004380029183493614,
+    "Has_Gym": 0.00043485170096450415,
+    "BHK": 0.0004284682411271431,
+    "Has_Playground": 0.0003910294793923296,
+    "Amenity_Count": 0.00032279551670458896
+  },
+  "feature_importance_reg": {
+    "Price_in_Lakhs": 0.8542686374421286,
+    "Price_per_SqFt_INR": 0.08425887940053357,
+    "Size_in_SqFt": 0.019755520550123876,
+    "Availability_Status": 0.014384280878599708,
+    "Is_Metro": 0.007096705250929549,
+    "Public_Transport_Accessibility": 0.006416679171429916,
+    "Infrastructure_Score": 0.005026661483910851,
+    "Age_of_Property": 0.004815867322702603,
+    "Has_Garden": 0.0008336050931855769,
+    "Nearby_Schools": 0.0008165369766524938,
+    "City": 0.0006418254239065323,
+    "Nearby_Hospitals": 0.0006320298033961342,
+    "Facing": 0.0005681007567921618,
+    "Size_per_BHK": 0.00017744927586909318,
+    "Floor_Ratio": 0.00014354660104971432,
+    "Amenity_Count": 0.0001393834434906223,
+    "Property_Type": 3.665801161536501e-06,
+    "Owner_Type": 3.6085341437107294e-06,
+    "Furnished_Status": 3.4756533256085623e-06,
+    "Parking_Space": 2.6259220623018613e-06,
+    "Security": 2.0399896318842754e-06,
+    "Total_Floors": 1.540437372988834e-06,
+    "Has_Pool": 1.3941017172176166e-06,
+    "Has_Playground": 1.3708045549489857e-06,
+    "Floor_No": 1.31389383168388e-06,
+    "BHK": 1.2212057457716445e-06,
+    "Has_Gym": 1.1040038210150775e-06,
+    "Has_Clubhouse": 9.307779303556235e-07
+  },
+  "features": {
+    "categorical": [
+      "City",
+      "Property_Type",
+      "Furnished_Status",
+      "Public_Transport_Accessibility",
+      "Facing",
+      "Owner_Type",
+      "Availability_Status",
+      "Parking_Space",
+      "Security"
+    ],
+    "numeric": [
+      "BHK",
+      "Size_in_SqFt",
+      "Price_in_Lakhs",
+      "Price_per_SqFt_INR",
+      "Age_of_Property",
+      "Floor_No",
+      "Total_Floors",
+      "Nearby_Schools",
+      "Nearby_Hospitals",
+      "Amenity_Count",
+      "Infrastructure_Score",
+      "Is_Metro",
+      "Floor_Ratio",
+      "Size_per_BHK",
+      "Has_Clubhouse",
+      "Has_Garden",
+      "Has_Gym",
+      "Has_Playground",
+      "Has_Pool"
+    ]
+  },
+  "class_balance_good_investment": 0.2742
+}
